@@ -28,7 +28,7 @@ nav{position:relative;z-index:10;display:flex;justify-content:space-between;alig
 .hero{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:0 52px;gap:40px;min-height:92vh;}
 .hero-left{padding:60px 0;animation:fadeUp 1s ease both;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
-.hero-eyebrow{font-size:12px;letter-spacing:0.32em;text-transform:uppercase;color:var(--canyon);margin-bottom:24px;display:flex;align-items:center;gap:14px;}
+.hero-eyebrow{font-size:16px;letter-spacing:0.32em;text-transform:uppercase;color:var(--canyon);margin-bottom:24px;display:flex;align-items:center;gap:14px;}
 .hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--canyon);opacity:0.7;}
 .hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(68px,7vw,96px);font-weight:300;line-height:0.92;color:var(--brick);letter-spacing:0.03em;margin-bottom:32px;}
 .hero-tagline{font-size:21px;font-style:italic;color:var(--dust);line-height:1.65;max-width:400px;margin-bottom:40px;}
@@ -47,19 +47,19 @@ nav{position:relative;z-index:10;display:flex;justify-content:space-between;alig
 .section-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:52px;}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;font-style:italic;color:var(--brick);}
 .see-all{font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:var(--canyon);cursor:pointer;text-decoration:none;}
-.essay-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+.essay-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;align-items:stretch;}
 
 /* Doorway cards */
-.doorway{display:flex;flex-direction:column;cursor:pointer;transition:transform 0.35s ease;text-decoration:none;}
+.doorway{display:flex;flex-direction:column;cursor:pointer;transition:transform 0.35s ease;text-decoration:none;height:100%;}
 .doorway:hover{transform:translateY(-6px);}
 .doorway-frame{width:100%;flex-shrink:0;}
-.doorway-panel{background:rgba(200,130,66,0.1);border-left:1.5px solid #C4854A;border-right:1.5px solid #C4854A;padding:26px 24px 22px;position:relative;margin-top:-2px;flex:1;}
+.doorway-panel{background:rgba(200,130,66,0.1);border-left:1.5px solid #C4854A;border-right:1.5px solid #C4854A;padding:26px 24px 22px;position:relative;margin-top:-2px;flex:1;display:flex;flex-direction:column;}
 .doorway-panel::before,.doorway-panel::after{content:'';position:absolute;top:0;bottom:0;width:10px;}
 .doorway-panel::before{left:6px;border-left:0.5px solid rgba(196,133,74,0.2);border-right:0.5px solid rgba(196,133,74,0.15);}
 .doorway-panel::after{right:6px;border-left:0.5px solid rgba(196,133,74,0.15);border-right:0.5px solid rgba(196,133,74,0.2);}
 .door-pub{font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--canyon);margin-bottom:12px;display:block;}
-.door-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;color:var(--brick);line-height:1.2;margin-bottom:14px;}
-.door-note{font-size:16px;font-style:italic;color:var(--dust);line-height:1.65;margin-bottom:20px;}
+.door-title{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:400;color:var(--brick);line-height:1.2;margin-bottom:14px;}
+.door-note{font-size:16px;font-style:italic;color:var(--dust);line-height:1.65;margin-bottom:20px;flex:1;}
 .door-link{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--canyon);text-decoration:none;border-bottom:1px solid rgba(196,133,74,0.35);padding-bottom:2px;}
 .doorway-steps{width:100%;flex-shrink:0;margin-top:-1px;}
 
@@ -69,7 +69,7 @@ nav{position:relative;z-index:10;display:flex;justify-content:space-between;alig
 .about-kicker::before{content:'';width:28px;height:1px;background:var(--canyon);}
 .about-headline{font-family:'Cormorant Garamond',serif;font-size:62px;font-weight:300;line-height:1.0;color:var(--brick);}
 .about-headline em{font-style:normal;color:var(--brick);}
-.about-intro{font-size:21px;font-style:italic;color:var(--ink-soft);line-height:1.72;margin-bottom:24px;}
+.about-intro{font-size:21px;font-style:normal;color:var(--ink-soft);line-height:1.72;margin-bottom:24px;}
 .about-intro strong{font-style:normal;color:var(--brick);font-weight:500;}
 
 .about-photo-row{padding:52px 52px 68px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;border-bottom:1px solid rgba(196,133,74,0.18);}
@@ -104,7 +104,7 @@ nav{position:relative;z-index:10;display:flex;justify-content:space-between;alig
 .contact-left::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Ccircle cx='24' cy='24' r='1.5' fill='%23D4A853' opacity='0.12'/%3E%3Ccircle cx='8' cy='8' r='1' fill='%23D4A853' opacity='0.08'/%3E%3Ccircle cx='40' cy='40' r='1' fill='%23D4A853' opacity='0.08'/%3E%3C/svg%3E");pointer-events:none;}
 .contact-eyebrow{font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--ochre);margin-bottom:22px;position:relative;z-index:1;display:flex;align-items:center;gap:12px;}
 .contact-eyebrow::before{content:'';width:28px;height:1px;background:var(--ochre);opacity:0.6;}
-.contact-pg-headline{font-family:'Cormorant Garamond',serif;font-size:62px;font-weight:300;font-style:italic;color:rgba(240,230,210,0.92);line-height:1.05;position:relative;z-index:1;}
+.contact-pg-headline{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;font-style:italic;color:rgba(240,230,210,0.92);line-height:1.15;position:relative;z-index:1;}
 .contact-pg-right{padding:72px 60px;}
 .contact-pg-kicker{font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:var(--canyon);margin-bottom:26px;display:flex;align-items:center;gap:12px;}
 .contact-pg-kicker::before{content:'';width:28px;height:1px;background:var(--canyon);opacity:0.7;}
@@ -134,11 +134,11 @@ nav{position:relative;z-index:10;display:flex;justify-content:space-between;alig
 .cv-role{margin-bottom:30px;padding-bottom:30px;border-bottom:1px solid rgba(196,133,74,0.1);}
 .cv-role:last-child{border-bottom:none;padding-bottom:0;}
 .cv-role-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px;}
-.cv-org{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;color:var(--brick);}
+.cv-org{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;color:var(--brick);}
 .cv-dates{font-size:13px;color:var(--dust);letter-spacing:0.06em;white-space:nowrap;}
-.cv-title{font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--canyon);margin-bottom:14px;}
+.cv-title{font-size:15px;letter-spacing:0.06em;text-transform:uppercase;color:var(--canyon);margin-bottom:14px;}
 .cv-bullets{list-style:none;}
-.cv-bullets li{font-size:16px;color:var(--ink-soft);line-height:1.75;margin-bottom:9px;padding-left:18px;position:relative;}
+.cv-bullets li{font-size:18px;color:var(--ink-soft);line-height:1.8;margin-bottom:10px;padding-left:18px;position:relative;}
 .cv-bullets li::before{content:'–';position:absolute;left:0;color:var(--canyon);opacity:0.6;}
 
 footer{position:relative;z-index:1;padding:28px 52px;border-top:1px solid rgba(196,133,74,0.18);display:flex;justify-content:center;}
@@ -613,7 +613,7 @@ window.addEventListener('load', function() {
           <span class="door-pub">Pillars Fund &middot; 2023</span>
           <h3 class="door-title">Khay&#257;l: A Multimedia Collection</h3>
           <p class="door-note">A publication I edited for Pillars Fund &#8212; essays, audio, and art by Muslim creatives on imagination, memory, and culture.</p>
-          <a class="door-link" href="Khayal_Collection.pdf" target="_blank" download>Read &amp; download &#8594;</a>
+          <a class="door-link" href="Khayal_Collection.pdf" onclick="openKhayal(event)">Read online &#8594;</a>
         </div>
         <svg class="doorway-steps" viewBox="0 0 240 28" fill="none"><rect width="240" height="28" fill="#F0E5CF"/><rect x="26" y="0" width="188" height="8" fill="#E2CFA4" stroke="#C4854A" stroke-width="0.6" opacity="0.7"/><rect x="34" y="8" width="172" height="7" fill="#D9C394" stroke="#C4854A" stroke-width="0.5" opacity="0.55"/><rect x="42" y="15" width="156" height="7" fill="#D0B882" stroke="#C4854A" stroke-width="0.4" opacity="0.4"/><rect x="50" y="22" width="140" height="6" fill="#C8AD72" stroke="#C4854A" stroke-width="0.3" opacity="0.3"/></svg>
       </div>
@@ -630,8 +630,8 @@ window.addEventListener('load', function() {
       <h2 class="about-headline">Strategy,<br>story,<br>care.</h2>
     </div>
     <div>
-      <p class="about-intro">I&#8217;m Aya Nimer &#8212; a <strong>strategic leader and writer</strong> whose work lives at the intersection of cultural strategy, Arab identity, and the institutions that shape what stories get told.</p>
-      <p class="about-intro" style="font-size:19px;">By day I build programs that center Muslim and Arab creatives at a national scale. In the margins &#8212; and increasingly not just the margins &#8212; I write essays about art, bodies, and the knowledge we carry without knowing it.</p>
+      <p class="about-intro"><strong>I&#8217;m Aya Nimer &#8212; a strategic leader and writer whose work lives at the intersection of cultural strategy, identity, and the institutions that shape which stories get told.</strong></p>
+      <p class="about-intro"><strong>By day I build programs that center Muslim and Arab creatives at a national scale. In the margins, I write essays about art, bodies, and the memories we carry.</strong></p>
     </div>
   </div>
   <div class="about-photo-row">
@@ -673,10 +673,10 @@ window.addEventListener('load', function() {
   <div class="about-contact">
     <div>
       <p class="contact-label">Get in touch</p>
-      <h3 class="contact-headline">Let&#8217;s make<br>something<br>worth reading.</h3>
+      <h3 class="contact-headline">Let&#8217;s build something transformational.</h3>
     </div>
     <div class="contact-right">
-      <p class="contact-body">Whether you&#8217;re looking for a critic, a collaborator, or a strategic partner who gets things done &#8212; reach out.</p>
+      <p class="contact-body">Whether you&#8217;re looking for a collaborator, critic, or a strategic partner &#8212; reach out.</p>
       <a class="contact-link" onclick="showPage('contact')">Get in touch &#8594;</a>
     </div>
   </div>
@@ -688,11 +688,11 @@ window.addEventListener('load', function() {
   <div class="contact-page">
     <div class="contact-left">
       <p class="contact-eyebrow">Contact</p>
-      <h2 class="contact-pg-headline">Let&#8217;s make<br>something<br>worth reading.</h2>
+      <h2 class="contact-pg-headline">Let&#8217;s build something transformational.</h2>
     </div>
     <div class="contact-pg-right">
       <p class="contact-pg-kicker">Get in touch</p>
-      <p class="contact-pg-body">Whether you&#8217;re looking for a critic, a collaborator, or a strategic partner &#8212; I&#8217;d love to hear from you.</p>
+      <p class="contact-pg-body">Whether you&#8217;re looking for a collaborator, critic, or a strategic partner &#8212; I&#8217;d love to hear from you.</p>
       <form class="contact-form" id="contactForm">
         <div class="form-row">
           <div class="form-group"><label for="fname">Name</label><input type="text" id="fname" name="name" placeholder="Your name" required></div>
@@ -812,5 +812,47 @@ document.getElementById('contactForm').addEventListener('submit', async function
   } catch { btn.textContent='Try again'; btn.disabled=false; }
 });
 </script>
+
+<!-- Khayal PDF Reader Modal -->
+<div id="khayalModal" style="display:none;position:fixed;inset:0;z-index:8000;background:rgba(26,15,6,0.92);">
+  <div style="position:relative;width:100%;height:100%;display:flex;flex-direction:column;">
+    <!-- Modal header -->
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 28px;background:#6B3210;flex-shrink:0;">
+      <div>
+        <p style="font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:#D4A853;margin-bottom:4px;font-family:'EB Garamond',serif;">Pillars Fund &middot; 2023</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;font-style:italic;color:rgba(240,230,210,0.92);margin:0;">Khay&#257;l: A Multimedia Collection by Muslim Creatives</h3>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <a href="Khayal_Collection.pdf" download style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#D4A853;text-decoration:none;border-bottom:1px solid rgba(212,168,83,0.4);padding-bottom:2px;">Download &#8595;</a>
+        <button onclick="closeKhayal()" style="background:none;border:none;cursor:pointer;padding:4px;color:rgba(240,230,210,0.7);font-size:28px;line-height:1;font-family:serif;">&times;</button>
+      </div>
+    </div>
+    <!-- Ornament divider -->
+    <div style="display:flex;justify-content:center;background:#6B3210;padding:0 0 10px;">
+      <svg width="200" height="12" viewBox="0 0 200 12"><line x1="0" y1="6" x2="74" y2="6" stroke="#C4854A" stroke-width="0.8" opacity="0.5"/><polygon points="80,6 86,1 92,6 86,11" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.7"/><polygon points="93,6 99,1 105,6 99,11" fill="none" stroke="#D4A853" stroke-width="0.9" opacity="0.9"/><polygon points="106,6 112,1 118,6 112,11" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.7"/><line x1="124" y1="6" x2="200" y2="6" stroke="#C4854A" stroke-width="0.8" opacity="0.5"/></svg>
+    </div>
+    <!-- PDF iframe -->
+    <iframe id="khayalFrame"
+      src="Khayal_Collection.pdf"
+      style="flex:1;width:100%;border:none;background:#2A1F14;"
+      title="Khayal Collection PDF">
+    </iframe>
+  </div>
+</div>
+<script>
+function openKhayal(e) {
+  if(e) e.preventDefault();
+  document.getElementById('khayalModal').style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+function closeKhayal() {
+  document.getElementById('khayalModal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if(e.key === 'Escape') closeKhayal();
+});
+</script>
+
 </body>
 </html>
