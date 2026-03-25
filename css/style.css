@@ -120,7 +120,7 @@ nav{position:relative;z-index:10;display:flex;justify-content:space-between;alig
 .cv-contact-block{text-align:right;}
 .cv-contact-block p{font-size:14px;color:var(--dust);line-height:1.9;}
 .cv-contact-block a{color:var(--canyon);text-decoration:none;}
-.cv-body{padding:56px 52px;display:grid;grid-template-columns:2fr 1fr;gap:64px;}
+.cv-body{padding:56px 52px;display:grid;grid-template-columns:3fr 2fr;gap:64px;}
 .cv-section{margin-bottom:48px;}
 .cv-section-label{font-size:13px;letter-spacing:0.28em;text-transform:uppercase;color:var(--canyon);margin-bottom:22px;display:flex;align-items:center;gap:12px;}
 .cv-section-label::after{content:'';flex:1;height:1px;background:rgba(196,133,74,0.25);}
