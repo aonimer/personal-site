@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap');
 
 
 :root{
@@ -23,7 +23,7 @@ nav{position:relative;z-index:10;display:flex;justify-content:space-between;alig
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 .hero-eyebrow{font-size:16px;letter-spacing:0.32em;text-transform:uppercase;color:var(--canyon);margin-bottom:24px;display:flex;align-items:center;gap:14px;}
 .hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--canyon);opacity:0.7;}
-.hero-name{font-family:'Pinyon Script',cursive;font-size:clamp(88px,9vw,124px);font-weight:400;line-height:1;color:var(--brick);letter-spacing:0.02em;margin-bottom:32px;}
+.hero-name{font-family:'Great Vibes',cursive;font-size:clamp(88px,9vw,124px);font-weight:400;line-height:1;color:var(--brick);letter-spacing:0.02em;margin-bottom:32px;}
 .hero-tagline{font-size:21px;font-style:italic;color:var(--dust);line-height:1.65;max-width:400px;margin-bottom:40px;}
 .hero-cta{display:inline-flex;align-items:center;gap:12px;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:var(--brick);cursor:pointer;padding-bottom:3px;border-bottom:1px solid var(--canyon);transition:gap 0.3s,color 0.2s;text-decoration:none;}
 .hero-cta:hover{gap:20px;color:var(--canyon);}
