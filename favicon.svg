@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Rounded plaster background -->
+  <rect width="64" height="64" rx="13" fill="#F0E5CF"/>
+
+  <!-- ── LAYER 1: 8 outer petals in ochre (every 45°) ── -->
+  <g opacity="0.82">
+    <!-- Each petal: lens shape pointing outward, built from two arcs -->
+    <g transform="rotate(0,32,32)">
+      <path d="M 32 10 C 37.5 17 37.5 27 32 32 C 26.5 27 26.5 17 32 10 Z" fill="#D4A853"/>
+    </g>
+    <g transform="rotate(45,32,32)">
+      <path d="M 32 10 C 37.5 17 37.5 27 32 32 C 26.5 27 26.5 17 32 10 Z" fill="#C4854A"/>
+    </g>
+    <g transform="rotate(90,32,32)">
+      <path d="M 32 10 C 37.5 17 37.5 27 32 32 C 26.5 27 26.5 17 32 10 Z" fill="#D4A853"/>
+    </g>
+    <g transform="rotate(135,32,32)">
+      <path d="M 32 10 C 37.5 17 37.5 27 32 32 C 26.5 27 26.5 17 32 10 Z" fill="#C4854A"/>
+    </g>
+    <g transform="rotate(180,32,32)">
+      <path d="M 32 10 C 37.5 17 37.5 27 32 32 C 26.5 27 26.5 17 32 10 Z" fill="#D4A853"/>
+    </g>
+    <g transform="rotate(225,32,32)">
+      <path d="M 32 10 C 37.5 17 37.5 27 32 32 C 26.5 27 26.5 17 32 10 Z" fill="#C4854A"/>
+    </g>
+    <g transform="rotate(270,32,32)">
+      <path d="M 32 10 C 37.5 17 37.5 27 32 32 C 26.5 27 26.5 17 32 10 Z" fill="#D4A853"/>
+    </g>
+    <g transform="rotate(315,32,32)">
+      <path d="M 32 10 C 37.5 17 37.5 27 32 32 C 26.5 27 26.5 17 32 10 Z" fill="#C4854A"/>
+    </g>
+  </g>
+
+  <!-- ── LAYER 2: 8-pointed star (two overlapping squares) ── -->
+  <!-- Square 1 (axis-aligned), Square 2 (rotated 45°) -->
+  <g opacity="0.72">
+    <polygon points="32,14 35.5,28.5 50,32 35.5,35.5 32,50 28.5,35.5 14,32 28.5,28.5"
+             fill="#8B5A2B"/>
+  </g>
+
+  <!-- ── LAYER 3: Inner ring of 8 small petal tips (canyon) ── -->
+  <g opacity="0.9">
+    <g transform="rotate(22.5,32,32)">
+      <ellipse cx="32" cy="21" rx="3" ry="5" fill="#C4854A"/>
+    </g>
+    <g transform="rotate(67.5,32,32)">
+      <ellipse cx="32" cy="21" rx="3" ry="5" fill="#D4A853"/>
+    </g>
+    <g transform="rotate(112.5,32,32)">
+      <ellipse cx="32" cy="21" rx="3" ry="5" fill="#C4854A"/>
+    </g>
+    <g transform="rotate(157.5,32,32)">
+      <ellipse cx="32" cy="21" rx="3" ry="5" fill="#D4A853"/>
+    </g>
+    <g transform="rotate(202.5,32,32)">
+      <ellipse cx="32" cy="21" rx="3" ry="5" fill="#C4854A"/>
+    </g>
+    <g transform="rotate(247.5,32,32)">
+      <ellipse cx="32" cy="21" rx="3" ry="5" fill="#D4A853"/>
+    </g>
+    <g transform="rotate(292.5,32,32)">
+      <ellipse cx="32" cy="21" rx="3" ry="5" fill="#C4854A"/>
+    </g>
+    <g transform="rotate(337.5,32,32)">
+      <ellipse cx="32" cy="21" rx="3" ry="5" fill="#D4A853"/>
+    </g>
+  </g>
+
+  <!-- ── LAYER 4: Centre circle ── -->
+  <circle cx="32" cy="32" r="7" fill="#8B5A2B" opacity="0.88"/>
+  <circle cx="32" cy="32" r="4" fill="#D4A853" opacity="0.95"/>
+  <circle cx="32" cy="32" r="1.8" fill="#F0E5CF"/>
+</svg>
