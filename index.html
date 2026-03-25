@@ -251,6 +251,11 @@ footer p{font-size:13px;color:var(--dust);letter-spacing:0.05em;}
   .door-note{font-size:15px;}
 }
 
+
+@media (max-width: 768px) {
+  #page-speaking .talk-grid{grid-template-columns:1fr !important;}
+}
+
 </style>
 </head>
 <body>
@@ -288,7 +293,7 @@ window.addEventListener('load', function() {
     <li><a onclick="showPage('home')" id="nav-home" class="active">Writing</a></li>
     <li><a onclick="showPage('about')" id="nav-about">About</a></li>
     <li><a onclick="showPage('cv')" id="nav-cv">CV</a></li>
-    <li><a onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+    <li><a onclick="showPage('speaking')" id="nav-speaking">Speaking</a></li><li><a onclick="showPage('contact')" id="nav-contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -372,67 +377,16 @@ window.addEventListener('load', function() {
       <!-- Door 1 -->
       <div class="doorway">
         <svg class="doorway-frame" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Plaster bg -->
           <rect width="240" height="180" fill="#F0E5CF"/>
-          <!-- Outer arch -->
           <path d="M16 180 L16 110 Q16 16 120 4 Q224 16 224 110 L224 180 Z" fill="#E8D8B8" stroke="#C4854A" stroke-width="1"/>
-          <!-- Inner arch -->
           <path d="M26 180 L26 114 Q26 30 120 18 Q214 30 214 114 L214 180 Z" fill="#DFC9A0" stroke="rgba(107,50,16,0.25)" stroke-width="0.8"/>
-          <!-- Dashed inner line -->
-          <path d="M30 130 Q30 38 120 22 Q210 38 210 130" fill="none" stroke="#C4854A" stroke-width="0.7" stroke-dasharray="3 3" opacity="0.45"/>
-          <!-- Islamic motif inside arch -->
+          <path d="M30 130 Q30 38 120 22 Q210 38 210 130" fill="none" stroke="#C4854A" stroke-width="0.7" stroke-dasharray="3 3" opacity="0.5"/>
           
-          <!-- 8-pointed star -->
-          <g transform="translate(120,54)" opacity="0.55" stroke="#8B5A2B" stroke-width="0.8" fill="none">
-            <polygon points="0,-22 5,-8 18,-13 9,-2 18,10 5,4 0,18 -5,4 -18,10 -9,-2 -18,-13 -5,-8" fill="rgba(196,133,74,0.18)"/>
-            <polygon points="0,-14 4,-5 12,-8 6,-1 12,6 4,3 0,11 -4,3 -12,6 -6,-1 -12,-8 -4,-5" fill="rgba(212,168,83,0.22)"/>
-            <circle cx="0" cy="0" r="4" fill="#D4A853" opacity="0.6"/>
-            <circle cx="0" cy="0" r="2" fill="#C4854A" opacity="0.8"/>
-          </g>
-          <!-- Small rosettes -->
-          <g opacity="0.4" stroke="#8B5A2B" stroke-width="0.6" fill="none">
-            <circle cx="56" cy="54" r="7"/><circle cx="56" cy="54" r="3.5" fill="rgba(196,133,74,0.2)"/>
-            <circle cx="184" cy="54" r="7"/><circle cx="184" cy="54" r="3.5" fill="rgba(196,133,74,0.2)"/>
-          </g>
-          <!-- Arabesque scrolls -->
-          <g opacity="0.35" stroke="#8B5A2B" stroke-width="0.6" fill="none">
-            <path d="M34 44 Q44 36 54 44 Q44 40 34 44"/>
-            <path d="M186 44 Q196 36 206 44 Q196 40 186 44"/>
-          </g>
-          <!-- Diamond carved border -->
-          <g opacity="0.55" stroke="#8B5A2B" stroke-width="0.7" fill="none">
-            <polygon points="60,110 72,98 84,110 72,122"/><polygon points="84,110 96,98 108,110 96,122"/>
-            <polygon points="108,110 120,98 132,110 120,122"/><polygon points="132,110 144,98 156,110 144,122"/>
-            <polygon points="156,110 168,98 180,110 168,122"/>
-            <polygon points="108,110 114,104 120,110 114,116" fill="rgba(196,133,74,0.2)"/>
-          </g>
-          <!-- Carved columns -->
-          <g opacity="0.45" stroke="#8B5A2B" stroke-width="0.6" fill="none">
-            <rect x="30" y="110" width="10" height="70" rx="1" stroke-width="0.7"/>
-            <rect x="32" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="200" y="110" width="10" height="70" rx="1" stroke-width="0.7"/>
-            <rect x="202" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-          </g>
-          <!-- Separator -->
-          <line x1="30" y1="130" x2="210" y2="130" stroke="#C4854A" stroke-width="1" opacity="0.45"/>
-          <line x1="30" y1="133" x2="210" y2="133" stroke="#C4854A" stroke-width="0.5" opacity="0.25"/>
-          <!-- Arches between columns -->
-          <path d="M30 130 Q54 108 80 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M80 130 Q105 108 130 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M130 130 Q155 108 180 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M180 130 Q206 108 210 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <!-- Keystone -->
-          <circle cx="120" cy="8" r="5" fill="none" stroke="#D4A853" stroke-width="1.2" opacity="0.8"/>
-          <circle cx="120" cy="8" r="2" fill="#D4A853" opacity="0.7"/>
-          <!-- Corner diamonds -->
-          <polygon points="16,100 24,112 16,124 8,112" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.45"/>
-          <polygon points="224,100 232,112 224,124 216,112" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.45"/>
+          <g opacity="0.55" stroke="#8B5A2B" stroke-width="0.7" fill="none"><polygon points="60,110 72,98 84,110 72,122"/><polygon points="84,110 96,98 108,110 96,122"/><polygon points="108,110 120,98 132,110 120,122"/><polygon points="132,110 144,98 156,110 144,122"/><polygon points="156,110 168,98 180,110 168,122"/><polygon points="60,110 66,104 72,110 66,116" fill="rgba(196,133,74,0.15)"/><polygon points="108,110 114,104 120,110 114,116" fill="rgba(196,133,74,0.15)"/><polygon points="156,110 162,104 168,110 162,116" fill="rgba(196,133,74,0.15)"/></g>
+          <g opacity="0.4" stroke="#8B5A2B" stroke-width="0.6" fill="none"><path d="M120 55 Q115 45 108 42 Q115 48 120 55 Q125 45 132 42 Q125 48 120 55Z" fill="rgba(196,133,74,0.2)"/><path d="M120 55 Q112 60 106 58 Q113 58 120 55 Q128 60 134 58 Q127 58 120 55Z" fill="rgba(196,133,74,0.15)"/><path d="M80 72 Q88 60 96 64 Q88 68 80 72Z" fill="rgba(196,133,74,0.12)"/><path d="M160 72 Q152 60 144 64 Q152 68 160 72Z" fill="rgba(196,133,74,0.12)"/><circle cx="96" cy="70" r="4"/><circle cx="96" cy="70" r="2" fill="rgba(196,133,74,0.3)"/><circle cx="144" cy="70" r="4"/><circle cx="144" cy="70" r="2" fill="rgba(196,133,74,0.3)"/><circle cx="120" cy="52" r="3.5"/><circle cx="120" cy="52" r="1.5" fill="rgba(212,168,83,0.5)"/></g>
+          <circle cx="120" cy="8" r="5" fill="none" stroke="#D4A853" stroke-width="1.2" opacity="0.8"/><circle cx="120" cy="8" r="2" fill="#D4A853" opacity="0.7"/>
+          <g opacity="0.45" stroke="#8B5A2B" stroke-width="0.6" fill="none"><rect x="30" y="110" width="10" height="70" rx="1" stroke-width="0.7"/><line x1="35" y1="118" x2="35" y2="175" stroke-width="0.4" opacity="0.6"/><rect x="32" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="200" y="110" width="10" height="70" rx="1" stroke-width="0.7"/><line x1="205" y1="118" x2="205" y2="175" stroke-width="0.4" opacity="0.6"/><rect x="202" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/></g>
+          <line x1="30" y1="130" x2="210" y2="130" stroke="#C4854A" stroke-width="1" opacity="0.45"/><line x1="30" y1="133" x2="210" y2="133" stroke="#C4854A" stroke-width="0.5" opacity="0.25"/>
         </svg>
         <div class="doorway-panel">
           <span class="door-pub">Project MUSE &middot; March 2023</span>
@@ -446,67 +400,16 @@ window.addEventListener('load', function() {
       <!-- Door 2 -->
       <div class="doorway">
         <svg class="doorway-frame" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Plaster bg -->
           <rect width="240" height="180" fill="#F0E5CF"/>
-          <!-- Outer arch -->
           <path d="M16 180 L16 110 Q16 16 120 4 Q224 16 224 110 L224 180 Z" fill="#E8D8B8" stroke="#C4854A" stroke-width="1"/>
-          <!-- Inner arch -->
           <path d="M26 180 L26 114 Q26 30 120 18 Q214 30 214 114 L214 180 Z" fill="#DFC9A0" stroke="rgba(107,50,16,0.25)" stroke-width="0.8"/>
-          <!-- Dashed inner line -->
-          <path d="M30 130 Q30 38 120 22 Q210 38 210 130" fill="none" stroke="#C4854A" stroke-width="0.7" stroke-dasharray="3 3" opacity="0.45"/>
-          <!-- Islamic motif inside arch -->
+          <path d="M30 130 Q30 38 120 22 Q210 38 210 130" fill="none" stroke="#C4854A" stroke-width="0.7" stroke-dasharray="3 3" opacity="0.5"/>
           
-          <g transform="translate(120,54)" opacity="0.55" stroke="#8B5A2B" stroke-width="0.8" fill="none">
-            <polygon points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11" fill="rgba(196,133,74,0.12)"/>
-            <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="rgba(212,168,83,0.2)"/>
-            <polygon points="0,-22 5,-11 0,-14 -5,-11"/>
-            <polygon points="19,-11 9,-7 12,-7 8,0"/>
-            <polygon points="19,11 9,7 12,7 8,0"/>
-            <polygon points="0,22 5,11 0,14 -5,11"/>
-            <polygon points="-19,11 -9,7 -12,7 -8,0"/>
-            <polygon points="-19,-11 -9,-7 -12,-7 -8,0"/>
-            <circle cx="0" cy="0" r="3.5" fill="#D4A853" opacity="0.65"/>
-          </g>
-          <g opacity="0.38" stroke="#8B5A2B" stroke-width="0.6" fill="none">
-            <circle cx="56" cy="54" r="6"/><circle cx="56" cy="54" r="2.5" fill="rgba(196,133,74,0.25)"/>
-            <circle cx="184" cy="54" r="6"/><circle cx="184" cy="54" r="2.5" fill="rgba(196,133,74,0.25)"/>
-            <path d="M34 48 Q44 40 54 48"/>
-            <path d="M186 48 Q196 40 206 48"/>
-          </g>
-          <!-- Diamond carved border -->
-          <g opacity="0.55" stroke="#8B5A2B" stroke-width="0.7" fill="none">
-            <polygon points="60,110 72,98 84,110 72,122"/><polygon points="84,110 96,98 108,110 96,122"/>
-            <polygon points="108,110 120,98 132,110 120,122"/><polygon points="132,110 144,98 156,110 144,122"/>
-            <polygon points="156,110 168,98 180,110 168,122"/>
-            <polygon points="108,110 114,104 120,110 114,116" fill="rgba(196,133,74,0.2)"/>
-          </g>
-          <!-- Carved columns -->
-          <g opacity="0.45" stroke="#8B5A2B" stroke-width="0.6" fill="none">
-            <rect x="30" y="110" width="10" height="70" rx="1" stroke-width="0.7"/>
-            <rect x="32" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="200" y="110" width="10" height="70" rx="1" stroke-width="0.7"/>
-            <rect x="202" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-          </g>
-          <!-- Separator -->
-          <line x1="30" y1="130" x2="210" y2="130" stroke="#C4854A" stroke-width="1" opacity="0.45"/>
-          <line x1="30" y1="133" x2="210" y2="133" stroke="#C4854A" stroke-width="0.5" opacity="0.25"/>
-          <!-- Arches between columns -->
-          <path d="M30 130 Q54 108 80 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M80 130 Q105 108 130 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M130 130 Q155 108 180 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M180 130 Q206 108 210 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <!-- Keystone -->
-          <circle cx="120" cy="8" r="5" fill="none" stroke="#D4A853" stroke-width="1.2" opacity="0.8"/>
-          <circle cx="120" cy="8" r="2" fill="#D4A853" opacity="0.7"/>
-          <!-- Corner diamonds -->
-          <polygon points="16,100 24,112 16,124 8,112" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.45"/>
-          <polygon points="224,100 232,112 224,124 216,112" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.45"/>
+          <g opacity="0.55" stroke="#8B5A2B" stroke-width="0.7" fill="none"><polygon points="60,110 72,98 84,110 72,122"/><polygon points="84,110 96,98 108,110 96,122"/><polygon points="108,110 120,98 132,110 120,122"/><polygon points="132,110 144,98 156,110 144,122"/><polygon points="156,110 168,98 180,110 168,122"/><polygon points="84,110 90,104 96,110 90,116" fill="rgba(196,133,74,0.15)"/><polygon points="132,110 138,104 144,110 138,116" fill="rgba(196,133,74,0.15)"/></g>
+          <g opacity="0.45" stroke="#8B5A2B" stroke-width="0.65" fill="none"><polygon points="120,38 124,50 136,50 127,57 130,69 120,62 110,69 113,57 104,50 116,50" fill="rgba(196,133,74,0.12)"/><line x1="120" y1="35" x2="120" y2="28"/><line x1="135" y1="42" x2="140" y2="37"/><line x1="142" y1="55" x2="149" y2="55"/><line x1="105" y1="42" x2="100" y2="37"/><line x1="98" y1="55" x2="91" y2="55"/><circle cx="82" cy="72" r="3.5"/><circle cx="82" cy="72" r="1.5" fill="rgba(196,133,74,0.3)"/><circle cx="158" cy="72" r="3.5"/><circle cx="158" cy="72" r="1.5" fill="rgba(196,133,74,0.3)"/></g>
+          <circle cx="120" cy="8" r="5" fill="none" stroke="#D4A853" stroke-width="1.2" opacity="0.8"/><circle cx="120" cy="8" r="2" fill="#D4A853" opacity="0.7"/>
+          <g opacity="0.45" stroke="#8B5A2B" stroke-width="0.6" fill="none"><rect x="30" y="110" width="10" height="70" rx="1" stroke-width="0.7"/><line x1="35" y1="118" x2="35" y2="175" stroke-width="0.4" opacity="0.6"/><rect x="32" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="200" y="110" width="10" height="70" rx="1" stroke-width="0.7"/><line x1="205" y1="118" x2="205" y2="175" stroke-width="0.4" opacity="0.6"/><rect x="202" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/></g>
+          <line x1="30" y1="130" x2="210" y2="130" stroke="#C4854A" stroke-width="1" opacity="0.45"/><line x1="30" y1="133" x2="210" y2="133" stroke="#C4854A" stroke-width="0.5" opacity="0.25"/>
         </svg>
         <div class="doorway-panel">
           <span class="door-pub">Ruckus Journal &middot; Fall 2022</span>
@@ -520,68 +423,16 @@ window.addEventListener('load', function() {
       <!-- Door 3 -->
       <div class="doorway">
         <svg class="doorway-frame" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Plaster bg -->
           <rect width="240" height="180" fill="#F0E5CF"/>
-          <!-- Outer arch -->
           <path d="M16 180 L16 110 Q16 16 120 4 Q224 16 224 110 L224 180 Z" fill="#E8D8B8" stroke="#C4854A" stroke-width="1"/>
-          <!-- Inner arch -->
           <path d="M26 180 L26 114 Q26 30 120 18 Q214 30 214 114 L214 180 Z" fill="#DFC9A0" stroke="rgba(107,50,16,0.25)" stroke-width="0.8"/>
-          <!-- Dashed inner line -->
-          <path d="M30 130 Q30 38 120 22 Q210 38 210 130" fill="none" stroke="#C4854A" stroke-width="0.7" stroke-dasharray="3 3" opacity="0.45"/>
-          <!-- Islamic motif inside arch -->
+          <path d="M30 130 Q30 38 120 22 Q210 38 210 130" fill="none" stroke="#C4854A" stroke-width="0.7" stroke-dasharray="3 3" opacity="0.5"/>
           
-          <g transform="translate(120,54)" opacity="0.5" stroke="#8B5A2B" stroke-width="0.85" fill="none">
-            <polygon points="0,-20 11.5,-5.8 11.5,5.8 0,20 -11.5,5.8 -11.5,-5.8" fill="rgba(196,133,74,0.1)"/>
-            <polygon points="0,-12 6.9,-3.5 6.9,3.5 0,12 -6.9,3.5 -6.9,-3.5" fill="rgba(212,168,83,0.18)"/>
-            <!-- Star points -->
-            <line x1="0" y1="-20" x2="0" y2="-28"/>
-            <line x1="11.5" y1="-5.8" x2="18" y2="-9"/>
-            <line x1="11.5" y1="5.8" x2="18" y2="9"/>
-            <line x1="0" y1="20" x2="0" y2="28"/>
-            <line x1="-11.5" y1="5.8" x2="-18" y2="9"/>
-            <line x1="-11.5" y1="-5.8" x2="-18" y2="-9"/>
-            <circle cx="0" cy="0" r="3" fill="#D4A853" opacity="0.7"/>
-          </g>
-          <g opacity="0.38" stroke="#8B5A2B" stroke-width="0.6" fill="none">
-            <circle cx="56" cy="54" r="6"/><circle cx="56" cy="54" r="2.5" fill="rgba(196,133,74,0.22)"/>
-            <circle cx="184" cy="54" r="6"/><circle cx="184" cy="54" r="2.5" fill="rgba(196,133,74,0.22)"/>
-            <path d="M34 46 Q44 38 54 46 Q44 42 34 46"/>
-            <path d="M186 46 Q196 38 206 46 Q196 42 186 46"/>
-          </g>
-          <!-- Diamond carved border -->
-          <g opacity="0.55" stroke="#8B5A2B" stroke-width="0.7" fill="none">
-            <polygon points="60,110 72,98 84,110 72,122"/><polygon points="84,110 96,98 108,110 96,122"/>
-            <polygon points="108,110 120,98 132,110 120,122"/><polygon points="132,110 144,98 156,110 144,122"/>
-            <polygon points="156,110 168,98 180,110 168,122"/>
-            <polygon points="108,110 114,104 120,110 114,116" fill="rgba(196,133,74,0.2)"/>
-          </g>
-          <!-- Carved columns -->
-          <g opacity="0.45" stroke="#8B5A2B" stroke-width="0.6" fill="none">
-            <rect x="30" y="110" width="10" height="70" rx="1" stroke-width="0.7"/>
-            <rect x="32" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="200" y="110" width="10" height="70" rx="1" stroke-width="0.7"/>
-            <rect x="202" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-          </g>
-          <!-- Separator -->
-          <line x1="30" y1="130" x2="210" y2="130" stroke="#C4854A" stroke-width="1" opacity="0.45"/>
-          <line x1="30" y1="133" x2="210" y2="133" stroke="#C4854A" stroke-width="0.5" opacity="0.25"/>
-          <!-- Arches between columns -->
-          <path d="M30 130 Q54 108 80 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M80 130 Q105 108 130 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M130 130 Q155 108 180 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M180 130 Q206 108 210 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <!-- Keystone -->
-          <circle cx="120" cy="8" r="5" fill="none" stroke="#D4A853" stroke-width="1.2" opacity="0.8"/>
-          <circle cx="120" cy="8" r="2" fill="#D4A853" opacity="0.7"/>
-          <!-- Corner diamonds -->
-          <polygon points="16,100 24,112 16,124 8,112" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.45"/>
-          <polygon points="224,100 232,112 224,124 216,112" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.45"/>
+          <g opacity="0.55" stroke="#8B5A2B" stroke-width="0.7" fill="none"><polygon points="60,110 72,98 84,110 72,122"/><polygon points="84,110 96,98 108,110 96,122"/><polygon points="108,110 120,98 132,110 120,122"/><polygon points="132,110 144,98 156,110 144,122"/><polygon points="156,110 168,98 180,110 168,122"/><polygon points="60,110 66,104 72,110 66,116" fill="rgba(196,133,74,0.15)"/><polygon points="156,110 162,104 168,110 162,116" fill="rgba(196,133,74,0.15)"/></g>
+          <g opacity="0.42" stroke="#8B5A2B" stroke-width="0.65" fill="none"><polygon points="120,44 132,51 132,65 120,72 108,65 108,51" fill="rgba(196,133,74,0.1)"/><polygon points="120,50 128,55 128,63 120,68 112,63 112,55" fill="rgba(196,133,74,0.08)"/><polygon points="120,38 124,44 120,50 116,44"/><polygon points="132,51 138,51 132,56 131,50"/><polygon points="120,72 124,78 120,72 116,78"/><polygon points="108,51 102,51 108,56 109,50"/><circle cx="120" cy="55" r="20" stroke-width="0.4" opacity="0.5"/></g>
+          <circle cx="120" cy="8" r="5" fill="none" stroke="#D4A853" stroke-width="1.2" opacity="0.8"/><circle cx="120" cy="8" r="2" fill="#D4A853" opacity="0.7"/>
+          <g opacity="0.45" stroke="#8B5A2B" stroke-width="0.6" fill="none"><rect x="30" y="110" width="10" height="70" rx="1" stroke-width="0.7"/><line x1="35" y1="118" x2="35" y2="175" stroke-width="0.4" opacity="0.6"/><rect x="32" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="200" y="110" width="10" height="70" rx="1" stroke-width="0.7"/><line x1="205" y1="118" x2="205" y2="175" stroke-width="0.4" opacity="0.6"/><rect x="202" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/></g>
+          <line x1="30" y1="130" x2="210" y2="130" stroke="#C4854A" stroke-width="1" opacity="0.45"/><line x1="30" y1="133" x2="210" y2="133" stroke="#C4854A" stroke-width="0.5" opacity="0.25"/>
         </svg>
         <div class="doorway-panel">
           <span class="door-pub">Ruckus Journal &middot; 2022</span>
@@ -595,64 +446,16 @@ window.addEventListener('load', function() {
       <!-- Khayal -->
       <div class="doorway">
         <svg class="doorway-frame" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Plaster bg -->
           <rect width="240" height="180" fill="#F0E5CF"/>
-          <!-- Outer arch -->
           <path d="M16 180 L16 110 Q16 16 120 4 Q224 16 224 110 L224 180 Z" fill="#E8D8B8" stroke="#C4854A" stroke-width="1"/>
-          <!-- Inner arch -->
           <path d="M26 180 L26 114 Q26 30 120 18 Q214 30 214 114 L214 180 Z" fill="#DFC9A0" stroke="rgba(107,50,16,0.25)" stroke-width="0.8"/>
-          <!-- Dashed inner line -->
-          <path d="M30 130 Q30 38 120 22 Q210 38 210 130" fill="none" stroke="#C4854A" stroke-width="0.7" stroke-dasharray="3 3" opacity="0.45"/>
-          <!-- Islamic motif inside arch -->
+          <path d="M30 130 Q30 38 120 22 Q210 38 210 130" fill="none" stroke="#C4854A" stroke-width="0.7" stroke-dasharray="3 3" opacity="0.5"/>
           
-          <g transform="translate(120,54)" opacity="0.52" stroke="#8B5A2B" stroke-width="0.85" fill="none">
-            <!-- Overlapping lobes — arabesque -->
-            <path d="M0,-22 Q12,-12 12,0 Q12,12 0,22 Q-12,12 -12,0 Q-12,-12 0,-22Z" fill="rgba(196,133,74,0.1)"/>
-            <path d="M-22,0 Q-12,-12 0,-12 Q12,-12 22,0 Q12,12 0,12 Q-12,12 -22,0Z" fill="rgba(212,168,83,0.12)"/>
-            <circle cx="0" cy="-14" r="4" fill="rgba(196,133,74,0.2)"/>
-            <circle cx="0" cy="14" r="4" fill="rgba(196,133,74,0.2)"/>
-            <circle cx="-14" cy="0" r="4" fill="rgba(196,133,74,0.2)"/>
-            <circle cx="14" cy="0" r="4" fill="rgba(196,133,74,0.2)"/>
-            <circle cx="0" cy="0" r="4" fill="#D4A853" opacity="0.65"/>
-          </g>
-          <g opacity="0.38" stroke="#8B5A2B" stroke-width="0.6" fill="none">
-            <circle cx="56" cy="54" r="6"/><circle cx="56" cy="54" r="2.5" fill="rgba(196,133,74,0.22)"/>
-            <circle cx="184" cy="54" r="6"/><circle cx="184" cy="54" r="2.5" fill="rgba(196,133,74,0.22)"/>
-          </g>
-          <!-- Diamond carved border -->
-          <g opacity="0.55" stroke="#8B5A2B" stroke-width="0.7" fill="none">
-            <polygon points="60,110 72,98 84,110 72,122"/><polygon points="84,110 96,98 108,110 96,122"/>
-            <polygon points="108,110 120,98 132,110 120,122"/><polygon points="132,110 144,98 156,110 144,122"/>
-            <polygon points="156,110 168,98 180,110 168,122"/>
-            <polygon points="108,110 114,104 120,110 114,116" fill="rgba(196,133,74,0.2)"/>
-          </g>
-          <!-- Carved columns -->
-          <g opacity="0.45" stroke="#8B5A2B" stroke-width="0.6" fill="none">
-            <rect x="30" y="110" width="10" height="70" rx="1" stroke-width="0.7"/>
-            <rect x="32" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="32" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="200" y="110" width="10" height="70" rx="1" stroke-width="0.7"/>
-            <rect x="202" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-            <rect x="202" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/>
-          </g>
-          <!-- Separator -->
-          <line x1="30" y1="130" x2="210" y2="130" stroke="#C4854A" stroke-width="1" opacity="0.45"/>
-          <line x1="30" y1="133" x2="210" y2="133" stroke="#C4854A" stroke-width="0.5" opacity="0.25"/>
-          <!-- Arches between columns -->
-          <path d="M30 130 Q54 108 80 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M80 130 Q105 108 130 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M130 130 Q155 108 180 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <path d="M180 130 Q206 108 210 130" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.3"/>
-          <!-- Keystone -->
-          <circle cx="120" cy="8" r="5" fill="none" stroke="#D4A853" stroke-width="1.2" opacity="0.8"/>
-          <circle cx="120" cy="8" r="2" fill="#D4A853" opacity="0.7"/>
-          <!-- Corner diamonds -->
-          <polygon points="16,100 24,112 16,124 8,112" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.45"/>
-          <polygon points="224,100 232,112 224,124 216,112" fill="none" stroke="#C4854A" stroke-width="0.8" opacity="0.45"/>
+          <g opacity="0.55" stroke="#8B5A2B" stroke-width="0.7" fill="none"><polygon points="60,110 72,98 84,110 72,122"/><polygon points="84,110 96,98 108,110 96,122"/><polygon points="108,110 120,98 132,110 120,122"/><polygon points="132,110 144,98 156,110 144,122"/><polygon points="156,110 168,98 180,110 168,122"/><polygon points="72,110 78,104 84,110 78,116" fill="rgba(196,133,74,0.2)"/><polygon points="120,110 126,104 132,110 126,116" fill="rgba(196,133,74,0.2)"/></g>
+          <g opacity="0.4" stroke="#8B5A2B" stroke-width="0.65" fill="none"><polygon points="120,44 132,51 132,65 120,72 108,65 108,51" fill="rgba(196,133,74,0.12)"/><polygon points="120,50 128,55 128,63 120,68 112,63 112,55" fill="rgba(196,133,74,0.08)"/><circle cx="120" cy="55" r="18" stroke-width="0.5" opacity="0.5"/><line x1="120" y1="35" x2="120" y2="28"/><line x1="132" y1="44" x2="137" y2="40"/><line x1="108" y1="44" x2="103" y2="40"/></g>
+          <circle cx="120" cy="8" r="5" fill="none" stroke="#D4A853" stroke-width="1.2" opacity="0.8"/><circle cx="120" cy="8" r="2" fill="#D4A853" opacity="0.7"/>
+          <g opacity="0.45" stroke="#8B5A2B" stroke-width="0.6" fill="none"><rect x="30" y="110" width="10" height="70" rx="1" stroke-width="0.7"/><line x1="35" y1="118" x2="35" y2="175" stroke-width="0.4" opacity="0.6"/><rect x="32" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="32" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="200" y="110" width="10" height="70" rx="1" stroke-width="0.7"/><line x1="205" y1="118" x2="205" y2="175" stroke-width="0.4" opacity="0.6"/><rect x="202" y="120" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="134" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="148" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/><rect x="202" y="162" width="6" height="8" rx="0.5" fill="rgba(196,133,74,0.1)"/></g>
+          <line x1="30" y1="130" x2="210" y2="130" stroke="#C4854A" stroke-width="1" opacity="0.45"/><line x1="30" y1="133" x2="210" y2="133" stroke="#C4854A" stroke-width="0.5" opacity="0.25"/>
         </svg>
         <div class="doorway-panel">
           <span class="door-pub">Pillars Fund &middot; 2023</span>
@@ -715,18 +518,90 @@ window.addEventListener('load', function() {
       </div>
     </div>
   </div>
-  <div class="about-contact">
-    <div>
-      <p class="contact-label">Get in touch</p>
-      <h3 class="contact-headline">Let&#8217;s build something transformational.</h3>
-    </div>
-    <div class="contact-right">
-      <p class="contact-body">Whether you&#8217;re looking for a collaborator, critic, or a strategic partner &#8212; reach out.</p>
-      <a class="contact-link" onclick="showPage('contact')">Get in touch &#8594;</a>
-    </div>
-  </div>
   <footer><p>&#169; 2026 Aya Nimer</p></footer>
 </div>
+
+
+<!-- SPEAKING -->
+<div class="page" id="page-speaking">
+
+  <!-- Header -->
+  <div style="padding:72px 52px 52px;border-bottom:1px solid rgba(196,133,74,0.18);">
+    <p style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:var(--canyon);margin-bottom:20px;display:flex;align-items:center;gap:12px;">
+      <span style="width:28px;height:1px;background:var(--canyon);display:inline-block;"></span>Speaking
+    </p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:62px;font-weight:300;line-height:1.0;color:var(--brick);max-width:700px;">Conversations on art,<br>culture, <em style="font-style:italic;color:var(--canyon);">and identity.</em></h2>
+  </div>
+
+  <!-- Talks -->
+  <div style="padding:56px 52px 80px;">
+
+    <!-- Talk 1 -->
+    <div style="display:grid;grid-template-columns:120px 1fr;gap:40px;padding:44px 0;border-bottom:1px solid rgba(196,133,74,0.15);align-items:start;">
+      <div>
+        <p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--canyon);line-height:1.8;">afikra<br>podcast</p>
+      </div>
+      <div>
+        <p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dust);margin-bottom:12px;">Interview</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:400;color:var(--brick);line-height:1.2;margin-bottom:14px;">Decolonizing Narratives: Insights on Art, History &amp; Culture</h3>
+        <p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--canyon);margin-bottom:16px;">with Hannah Feldman</p>
+        <p style="font-size:18px;font-style:italic;color:var(--dust);line-height:1.72;max-width:680px;margin-bottom:28px;">A conversation with Hannah Feldman &#8212; scholar, core faculty in Middle Eastern and North African Studies, and author of <em>From a Nation Torn: Decolonizing Art and Representation in France, 1945&#8211;1962</em> &#8212; on decoloniality, the historiography of art, and temporality in Levantine Middle Eastern art.</p>
+        <a href="https://www.youtube.com/watch?v=EvRrDrd6pRg" target="_blank" style="display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--canyon);text-decoration:none;border-bottom:1px solid rgba(196,133,74,0.35);padding-bottom:3px;transition:gap 0.3s;" onmouseover="this.style.gap='14px'" onmouseout="this.style.gap='8px'">
+          Watch &#8594;
+        </a>
+      </div>
+    </div>
+
+    <!-- Talk 2 -->
+    <div style="display:grid;grid-template-columns:120px 1fr;gap:40px;padding:44px 0;border-bottom:1px solid rgba(196,133,74,0.15);align-items:start;">
+      <div>
+        <p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--canyon);line-height:1.8;">afikra<br>FWD</p>
+      </div>
+      <div>
+        <p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dust);margin-bottom:12px;">Book Talk</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:400;color:var(--brick);line-height:1.2;margin-bottom:14px;">The Nawal El Saadawi Reader</h3>
+        <p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--canyon);margin-bottom:16px;">Nawal El Saadawi</p>
+        <p style="font-size:18px;font-style:italic;color:var(--dust);line-height:1.72;max-width:680px;margin-bottom:28px;">A close reading of Nawal El Saadawi&#8217;s collected non-fiction &#8212; her foundational writings on feminism, the body, and women&#8217;s lives in Egypt &#8212; and what her work demands of contemporary readers.</p>
+        <a href="https://www.youtube.com/watch?v=JoFjrcWow3c&t=430s" target="_blank" style="display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--canyon);text-decoration:none;border-bottom:1px solid rgba(196,133,74,0.35);padding-bottom:3px;transition:gap 0.3s;" onmouseover="this.style.gap='14px'" onmouseout="this.style.gap='8px'">
+          Watch &#8594;
+        </a>
+      </div>
+    </div>
+
+    <!-- Talk 3 -->
+    <div style="display:grid;grid-template-columns:120px 1fr;gap:40px;padding:44px 0;border-bottom:1px solid rgba(196,133,74,0.15);align-items:start;">
+      <div>
+        <p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--canyon);line-height:1.8;">afikra<br>podcast</p>
+      </div>
+      <div>
+        <p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dust);margin-bottom:12px;">Interview</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:400;color:var(--brick);line-height:1.2;margin-bottom:14px;">The Birth of Calligraforms &amp; Arabic Calligraphy in Advertising</h3>
+        <p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--canyon);margin-bottom:16px;">with Majid Alyousef</p>
+        <p style="font-size:18px;font-style:italic;color:var(--dust);line-height:1.72;max-width:680px;margin-bottom:28px;">A conversation with Majid Alyousef &#8212; pioneering figure in modern and abstract calligraphy &#8212; on his transition to abstraction, landmark projects including the Room of Emirates at the UN in Geneva, and collaborations with global brands. Plus: advice for emerging calligraphers on practice and exploration.</p>
+        <a href="https://www.youtube.com/watch?v=fNwWso3oVS8&t=1289s" target="_blank" style="display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--canyon);text-decoration:none;border-bottom:1px solid rgba(196,133,74,0.35);padding-bottom:3px;transition:gap 0.3s;" onmouseover="this.style.gap='14px'" onmouseout="this.style.gap='8px'">
+          Watch &#8594;
+        </a>
+      </div>
+    </div>
+
+    <!-- Invite section -->
+    <div style="margin-top:72px;padding:52px;background:var(--brick);position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;">
+      <div style="position:absolute;inset:0;background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Ccircle cx='24' cy='24' r='1.5' fill='%23D4A853' opacity='0.12'/%3E%3Ccircle cx='8' cy='8' r='1' fill='%23D4A853' opacity='0.08'/%3E%3Ccircle cx='40' cy='40' r='1' fill='%23D4A853' opacity='0.08'/%3E%3C/svg%3E&quot;);pointer-events:none;z-index:0;"></div>
+      <div style="position:relative;z-index:1;">
+        <p style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--ochre);margin-bottom:18px;">Invite Aya to speak</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;font-style:italic;color:rgba(240,230,210,0.92);line-height:1.1;">Bring these conversations<br>to your audience.</h3>
+      </div>
+      <div style="position:relative;z-index:1;">
+        <p style="font-size:18px;font-style:italic;color:rgba(240,230,210,0.72);line-height:1.7;margin-bottom:28px;">Aya speaks on Arab cultural identity, Muslim creative communities, art criticism, and the institutions that shape whose stories get told.</p>
+        <a onclick="showPage('contact')" style="display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ochre);text-decoration:none;cursor:pointer;border-bottom:1px solid rgba(212,168,83,0.4);padding-bottom:3px;">Get in touch &#8594;</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer><p>&#169; 2026 Aya Nimer</p></footer>
+</div>
+
 
 <!-- CONTACT -->
 <div class="page" id="page-contact">
@@ -846,7 +721,7 @@ function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-' + name).classList.add('active');
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-  const map = {home:'nav-home',about:'nav-about',cv:'nav-cv',contact:'nav-contact'};
+  const map = {home:'nav-home',about:'nav-about',cv:'nav-cv',speaking:'nav-speaking',contact:'nav-contact'};
   if (map[name]) document.getElementById(map[name]).classList.add('active');
   window.scrollTo(0,0);
 }
