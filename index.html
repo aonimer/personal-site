@@ -9,6 +9,9 @@
   <meta name="keywords" content="Aya Nimer, strategist, essayist, cultural strategy, Arab identity, Muslim creatives, Pillars Fund, art criticism, contemporary art">
   <meta name="author" content="Aya Nimer">
   <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src https://formspree.io; frame-ancestors 'none';">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAEjklEQVRYhcWXS28bVRiGn3NmPBfHl7i20+aepmkbUQEqKiwqyoYdEhJ/gBWbqqyA38EKukVI/IAukNihQlVl06qoQEtD0txqJ6W26/g6nvHMOSyamhSSunGr8KzOzPnm/V6dc+b7ZgS7eLx5+4LU0acCcUHDUcDg1RACRQQ/EEZfDk+du/90QgBofdWsbWW+QuuLryjh8/C05lJm4uy3ABLgEJMDuELwTW3z1scAorp56z2hxc+HlHw37UjL01JoLv0PyQHiJuoLKRAXBlXoVFfoVFcGdqAlH5o7p/3gD+uQRmEBAHt4CiHMAUSYlgz4qnUqy3jNGl6zRqeyPIgEgNnXdvXPmygVkhibw07liPwa/vYGfn2DxnYLECTLy3RqHZLHjmMOpfFrJVpb9xHSJHPq3PMd9DOgVEh18QbVxRu4uXHsdJduawutIprbLbQQlP74FR38TiM/iWHH8coFADLz7/RdAtkvIDE21xt75SLt0jpKhSjlE4UBfr1N2O6gVEjrr9VecoDk6NxekgczYKdyuLnx3nXkG6hugFZgWiCVQitQ3QBhxHpxbn4SK5Xta6DvFoStbaJOi26rhjAswMawAtq+R+lhg9DTuIaB68YxbRfDDjDsCDvlE/l1DDv1cgYaD9fwykUQEPlNVNejsOmzXigShgqAar3JzOQEs2NthKmQMYtuawu//oB4/sxgBrQO6VSW0WERaWuiVgACWu02axsPyebjnD4zAsDinUesF4qMTE2RSjtoFaAQ+NtrCGHgZOf2rRN73u1UV2gUFug0azTqbZq+j+8FEEZUak0ipTj1Wp6xNz7aMXuF6z+tsrL0mJHRJKEP2vBIVn5jOLOKm7pJcuI8Tmb2xVfg38TiEsMUxHxjp4kDGkD1xqGn6FS7aCExEy8mvWeUk5nFHp6iU1km+fg+7co9lPJBw1AiRvlRk8W7JeAKAIt3SxhSMnYkyVDcRkiIxR2yJ1/HzZ44+BYACGHi5ubRURevuoTAQnUDhhyX6clx1jYKXL+6CgJM02BmepzEkI1WEUJaqEBiWJO4ufmDr8Bu7OFpzPgoXnkdFViEnRgjiYDk8VEKj2uYcYO5kzlcyyZoxAn9DkRdnPwkQ8dm+sn3N2DYKYK6RVB3AQg7HlpFOI5FJp3AOWIwlLDQSmPYIRB/Imy7mO7zawC8QCX0a6VnyisqQMYshAQtJWEACJAxC9NWvTCvXMSvl1/eQGur9wGLm5/EPXocKU3MuIuTdJCmg5Q2Upo4+elnynZzs3+b7rsFQppkTr9NcvwUVvIIYatG69E6UfCA7sodQODm5rGHZ3DSU0grSVCv0NhcQu7qDfvqbxd/0X2j9sAr36O09CMA+ZPv9z3t+yF58tNwYJzsHG4ijZtI42T7t919iEw0Gwj+WyP7IIRJcuJ8bzwgW1LA94M+7WRm96zvB+CaqBRuTxhCLfL0BT48tIR3ZXbizYIQ+iI7reXQsqMvp8bPLkiA9Nhb32nEJ4B3SMm/Hh6rfQb/NFYAtjdunsAwPgc+ACY4QLvuQwRsAdckXE6Nn114OvE32VTdOAdqCHcAAAAASUVORK5CYII=">
@@ -67,10 +70,7 @@
   </svg>
   <p style="font-family:'EB Garamond',serif;font-size:22px;font-style:italic;color:#8A6A4A;margin-top:20px;opacity:0;animation:loaderFadeIn 0.6s ease 0.5s forwards;letter-spacing:0.04em;">Aya Nimer</p>
 </div>
-<style>
-@keyframes loaderFadeIn{from{opacity:0;}to{opacity:1;}}
-#loader.hidden{opacity:0;pointer-events:none;}
-</style>
+
 <script>
 window.addEventListener('load', function() {
   setTimeout(function() {
@@ -81,16 +81,7 @@ window.addEventListener('load', function() {
   }, 600);
 });
 </script>
-<script>
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    document.getElementById('loader').classList.add('hidden');
-    setTimeout(function() {
-      document.getElementById('loader').style.display = 'none';
-    }, 900);
-  }, 600);
-});
-</script>
+
 
 <nav>
   <a href="/" class="nav-logo">Aya Nimer</a>
@@ -196,7 +187,7 @@ window.addEventListener('load', function() {
           <span class="door-pub">CrossCurrents &middot; March 2023</span>
           <h3 class="door-title">Little Syria</h3>
           <p class="door-note">On Omar Offendum&#8217;s BAM show &#8212; how hakawati, mother-of-pearl, and shammi design create a bridge between a lost Manhattan neighborhood and its living diaspora.</p>
-          <a class="door-link" href="https://muse.jhu.edu/article/886058" target="_blank">Read essay &#8594;</a>
+          <a class="door-link" href="https://muse.jhu.edu/article/886058" target="_blank" rel="noopener noreferrer">Read essay &#8594;</a>
         </div>
         <svg class="doorway-steps" viewBox="0 0 240 28" fill="none"><rect width="240" height="28" fill="#F0E5CF"/><rect x="26" y="0" width="188" height="8" fill="#E2CFA4" stroke="#C4854A" stroke-width="0.6" opacity="0.7"/><rect x="34" y="8" width="172" height="7" fill="#D9C394" stroke="#C4854A" stroke-width="0.5" opacity="0.55"/><rect x="42" y="15" width="156" height="7" fill="#D0B882" stroke="#C4854A" stroke-width="0.4" opacity="0.4"/><rect x="50" y="22" width="140" height="6" fill="#C8AD72" stroke="#C4854A" stroke-width="0.3" opacity="0.3"/></svg>
       </div>
@@ -219,7 +210,7 @@ window.addEventListener('load', function() {
           <span class="door-pub">Ruckus Journal &middot; Fall 2022</span>
           <h3 class="door-title">Taking Shape: Abstraction from the Arab World</h3>
           <p class="door-note">On the landmark Block Museum exhibition &#8212; how Arab artists used abstraction to negotiate identity, decolonization, and the intimacy of place.</p>
-          <a class="door-link" href="https://ruckusjournal.org/Taking-Shape-Abstraction-from-the-Arab-World" target="_blank">Read essay &#8594;</a>
+          <a class="door-link" href="https://ruckusjournal.org/Taking-Shape-Abstraction-from-the-Arab-World" target="_blank" rel="noopener noreferrer">Read essay &#8594;</a>
         </div>
         <svg class="doorway-steps" viewBox="0 0 240 28" fill="none"><rect width="240" height="28" fill="#F0E5CF"/><rect x="26" y="0" width="188" height="8" fill="#E2CFA4" stroke="#C4854A" stroke-width="0.6" opacity="0.7"/><rect x="34" y="8" width="172" height="7" fill="#D9C394" stroke="#C4854A" stroke-width="0.5" opacity="0.55"/><rect x="42" y="15" width="156" height="7" fill="#D0B882" stroke="#C4854A" stroke-width="0.4" opacity="0.4"/><rect x="50" y="22" width="140" height="6" fill="#C8AD72" stroke="#C4854A" stroke-width="0.3" opacity="0.3"/></svg>
       </div>
@@ -242,7 +233,7 @@ window.addEventListener('load', function() {
           <span class="door-pub">Ruckus Journal &middot; 2022</span>
           <h3 class="door-title">Crossings</h3>
           <p class="door-note">On Farah Salem and Anwulika Anigbo&#8217;s Chicago Artists Coalition exhibition &#8212; the body as a site of pressure, distortion, and indigenous healing.</p>
-          <a class="door-link" href="https://ruckus.cargo.site/Crossings" target="_blank">Read essay &#8594;</a>
+          <a class="door-link" href="https://ruckus.cargo.site/Crossings" target="_blank" rel="noopener noreferrer">Read essay &#8594;</a>
         </div>
         <svg class="doorway-steps" viewBox="0 0 240 28" fill="none"><rect width="240" height="28" fill="#F0E5CF"/><rect x="26" y="0" width="188" height="8" fill="#E2CFA4" stroke="#C4854A" stroke-width="0.6" opacity="0.7"/><rect x="34" y="8" width="172" height="7" fill="#D9C394" stroke="#C4854A" stroke-width="0.5" opacity="0.55"/><rect x="42" y="15" width="156" height="7" fill="#D0B882" stroke="#C4854A" stroke-width="0.4" opacity="0.4"/><rect x="50" y="22" width="140" height="6" fill="#C8AD72" stroke="#C4854A" stroke-width="0.3" opacity="0.3"/></svg>
       </div>
@@ -265,7 +256,7 @@ window.addEventListener('load', function() {
           <span class="door-pub">Pillars Fund &middot; 2023</span>
           <h3 class="door-title">Khay&#257;l: A Multimedia Collection</h3>
           <p class="door-note">A publication I edited for Pillars Fund &#8212; essays, audio, and art by Muslim creatives on imagination, memory, and culture.</p>
-          <a class="door-link" href="https://drive.google.com/file/d/17d9DXfNMVJkaT7rUma5-0aMJO0f1y_1t/view?usp=sharing" target="_blank">Read online &#8594;</a>
+          <a class="door-link" href="https://drive.google.com/file/d/17d9DXfNMVJkaT7rUma5-0aMJO0f1y_1t/view?usp=sharing" target="_blank" rel="noopener noreferrer">Read online &#8594;</a>
         </div>
         <svg class="doorway-steps" viewBox="0 0 240 28" fill="none"><rect width="240" height="28" fill="#F0E5CF"/><rect x="26" y="0" width="188" height="8" fill="#E2CFA4" stroke="#C4854A" stroke-width="0.6" opacity="0.7"/><rect x="34" y="8" width="172" height="7" fill="#D9C394" stroke="#C4854A" stroke-width="0.5" opacity="0.55"/><rect x="42" y="15" width="156" height="7" fill="#D0B882" stroke="#C4854A" stroke-width="0.4" opacity="0.4"/><rect x="50" y="22" width="140" height="6" fill="#C8AD72" stroke="#C4854A" stroke-width="0.3" opacity="0.3"/></svg>
       </div>
@@ -288,7 +279,7 @@ window.addEventListener('load', function() {
           <span class="door-pub">Color Congress &middot; March 2026</span>
           <h3 class="door-title">Care as Culture Change</h3>
           <p class="door-note">On care as a structural principle &#8212; what it means to build arts institutions and creative communities where care is the work, not the supplement.</p>
-          <a class="door-link" href="https://medium.com/@colorcongress/care-as-culture-change-e79c829ed6e5" target="_blank">Read essay &#8594;</a>
+          <a class="door-link" href="https://medium.com/@colorcongress/care-as-culture-change-e79c829ed6e5" target="_blank" rel="noopener noreferrer">Read essay &#8594;</a>
         </div>
         <svg class="doorway-steps" viewBox="0 0 240 28" fill="none"><rect width="240" height="28" fill="#F0E5CF"/><rect x="26" y="0" width="188" height="8" fill="#E2CFA4" stroke="#C4854A" stroke-width="0.6" opacity="0.7"/><rect x="34" y="8" width="172" height="7" fill="#D9C394" stroke="#C4854A" stroke-width="0.5" opacity="0.55"/><rect x="42" y="15" width="156" height="7" fill="#D0B882" stroke="#C4854A" stroke-width="0.4" opacity="0.4"/><rect x="50" y="22" width="140" height="6" fill="#C8AD72" stroke="#C4854A" stroke-width="0.3" opacity="0.3"/></svg>
       </div>
@@ -311,7 +302,7 @@ window.addEventListener('load', function() {
           <span class="door-pub">Service95</span>
           <h3 class="door-title">Why Muslim Representation in Film and TV Matters</h3>
           <p class="door-note">On what authentic Muslim storytelling in mainstream film and television demands &#8212; and why getting it right matters for communities whose lives have long been filtered through Hollywood&#8217;s lens.</p>
-          <a class="door-link" href="https://www.service95.com/why-muslim-representation-in-film-and-tv-matters" target="_blank">Read essay &#8594;</a>
+          <a class="door-link" href="https://www.service95.com/why-muslim-representation-in-film-and-tv-matters" target="_blank" rel="noopener noreferrer">Read essay &#8594;</a>
         </div>
         <svg class="doorway-steps" viewBox="0 0 240 28" fill="none"><rect width="240" height="28" fill="#F0E5CF"/><rect x="26" y="0" width="188" height="8" fill="#E2CFA4" stroke="#C4854A" stroke-width="0.6" opacity="0.7"/><rect x="34" y="8" width="172" height="7" fill="#D9C394" stroke="#C4854A" stroke-width="0.5" opacity="0.55"/><rect x="42" y="15" width="156" height="7" fill="#D0B882" stroke="#C4854A" stroke-width="0.4" opacity="0.4"/><rect x="50" y="22" width="140" height="6" fill="#C8AD72" stroke="#C4854A" stroke-width="0.3" opacity="0.3"/></svg>
       </div>

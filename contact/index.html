@@ -9,6 +9,9 @@
   <meta name="keywords" content="Aya Nimer, strategist, essayist, cultural strategy, Arab identity, Muslim creatives, Pillars Fund, art criticism, contemporary art">
   <meta name="author" content="Aya Nimer">
   <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src https://formspree.io; frame-ancestors 'none';">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAEjklEQVRYhcWXS28bVRiGn3NmPBfHl7i20+aepmkbUQEqKiwqyoYdEhJ/gBWbqqyA38EKukVI/IAukNihQlVl06qoQEtD0txqJ6W26/g6nvHMOSyamhSSunGr8KzOzPnm/V6dc+b7ZgS7eLx5+4LU0acCcUHDUcDg1RACRQQ/EEZfDk+du/90QgBofdWsbWW+QuuLryjh8/C05lJm4uy3ABLgEJMDuELwTW3z1scAorp56z2hxc+HlHw37UjL01JoLv0PyQHiJuoLKRAXBlXoVFfoVFcGdqAlH5o7p/3gD+uQRmEBAHt4CiHMAUSYlgz4qnUqy3jNGl6zRqeyPIgEgNnXdvXPmygVkhibw07liPwa/vYGfn2DxnYLECTLy3RqHZLHjmMOpfFrJVpb9xHSJHPq3PMd9DOgVEh18QbVxRu4uXHsdJduawutIprbLbQQlP74FR38TiM/iWHH8coFADLz7/RdAtkvIDE21xt75SLt0jpKhSjlE4UBfr1N2O6gVEjrr9VecoDk6NxekgczYKdyuLnx3nXkG6hugFZgWiCVQitQ3QBhxHpxbn4SK5Xta6DvFoStbaJOi26rhjAswMawAtq+R+lhg9DTuIaB68YxbRfDDjDsCDvlE/l1DDv1cgYaD9fwykUQEPlNVNejsOmzXigShgqAar3JzOQEs2NthKmQMYtuawu//oB4/sxgBrQO6VSW0WERaWuiVgACWu02axsPyebjnD4zAsDinUesF4qMTE2RSjtoFaAQ+NtrCGHgZOf2rRN73u1UV2gUFug0azTqbZq+j+8FEEZUak0ipTj1Wp6xNz7aMXuF6z+tsrL0mJHRJKEP2vBIVn5jOLOKm7pJcuI8Tmb2xVfg38TiEsMUxHxjp4kDGkD1xqGn6FS7aCExEy8mvWeUk5nFHp6iU1km+fg+7co9lPJBw1AiRvlRk8W7JeAKAIt3SxhSMnYkyVDcRkiIxR2yJ1/HzZ44+BYACGHi5ubRURevuoTAQnUDhhyX6clx1jYKXL+6CgJM02BmepzEkI1WEUJaqEBiWJO4ufmDr8Bu7OFpzPgoXnkdFViEnRgjiYDk8VEKj2uYcYO5kzlcyyZoxAn9DkRdnPwkQ8dm+sn3N2DYKYK6RVB3AQg7HlpFOI5FJp3AOWIwlLDQSmPYIRB/Imy7mO7zawC8QCX0a6VnyisqQMYshAQtJWEACJAxC9NWvTCvXMSvl1/eQGur9wGLm5/EPXocKU3MuIuTdJCmg5Q2Upo4+elnynZzs3+b7rsFQppkTr9NcvwUVvIIYatG69E6UfCA7sodQODm5rGHZ3DSU0grSVCv0NhcQu7qDfvqbxd/0X2j9sAr36O09CMA+ZPv9z3t+yF58tNwYJzsHG4ijZtI42T7t919iEw0Gwj+WyP7IIRJcuJ8bzwgW1LA94M+7WRm96zvB+CaqBRuTxhCLfL0BT48tIR3ZXbizYIQ+iI7reXQsqMvp8bPLkiA9Nhb32nEJ4B3SMm/Hh6rfQb/NFYAtjdunsAwPgc+ACY4QLvuQwRsAdckXE6Nn114OvE32VTdOAdqCHcAAAAASUVORK5CYII=">
@@ -67,10 +70,7 @@
   </svg>
   <p style="font-family:'EB Garamond',serif;font-size:22px;font-style:italic;color:#8A6A4A;margin-top:20px;opacity:0;animation:loaderFadeIn 0.6s ease 0.5s forwards;letter-spacing:0.04em;">Aya Nimer</p>
 </div>
-<style>
-@keyframes loaderFadeIn{from{opacity:0;}to{opacity:1;}}
-#loader.hidden{opacity:0;pointer-events:none;}
-</style>
+
 <script>
 window.addEventListener('load', function() {
   setTimeout(function() {
@@ -81,16 +81,7 @@ window.addEventListener('load', function() {
   }, 600);
 });
 </script>
-<script>
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    document.getElementById('loader').classList.add('hidden');
-    setTimeout(function() {
-      document.getElementById('loader').style.display = 'none';
-    }, 900);
-  }, 600);
-});
-</script>
+
 
 <nav>
   <a href="/" class="nav-logo">Aya Nimer</a>
@@ -114,17 +105,18 @@ window.addEventListener('load', function() {
 
       <!-- Social links -->
       <div style="display:flex;gap:20px;margin-bottom:36px;">
-        <a href="https://www.linkedin.com/in/ayanimer/" target="_blank" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dust);text-decoration:none;padding-bottom:3px;border-bottom:1px solid rgba(196,133,74,0.3);transition:color 0.2s,border-color 0.2s;" onmouseover="this.style.color='#C4854A';this.style.borderColor='#C4854A'" onmouseout="this.style.color='';this.style.borderColor=''">
+        <a href="https://www.linkedin.com/in/ayanimer/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dust);text-decoration:none;padding-bottom:3px;border-bottom:1px solid rgba(196,133,74,0.3);transition:color 0.2s,border-color 0.2s;" onmouseover="this.style.color='#C4854A';this.style.borderColor='#C4854A'" onmouseout="this.style.color='';this.style.borderColor=''">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="10" x2="8" y2="17"/><line x1="8" y1="7" x2="8" y2="7.5"/><line x1="12" y1="17" x2="12" y2="13"/><path d="M12 10c0 0 0 3 4 3v-3c-4 0-4-3-4-3z"/></svg>
           LinkedIn
         </a>
-        <a href="https://www.instagram.com/aonimer/" target="_blank" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dust);text-decoration:none;padding-bottom:3px;border-bottom:1px solid rgba(196,133,74,0.3);transition:color 0.2s,border-color 0.2s;" onmouseover="this.style.color='#C4854A';this.style.borderColor='#C4854A'" onmouseout="this.style.color='';this.style.borderColor=''">
+        <a href="https://www.instagram.com/aonimer/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dust);text-decoration:none;padding-bottom:3px;border-bottom:1px solid rgba(196,133,74,0.3);transition:color 0.2s,border-color 0.2s;" onmouseover="this.style.color='#C4854A';this.style.borderColor='#C4854A'" onmouseout="this.style.color='';this.style.borderColor=''">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
           Instagram
         </a>
       </div>
 
       <form class="contact-form" id="contactForm">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <div class="form-group"><label for="fname">Name</label><input type="text" id="fname" name="name" placeholder="Your name" required></div>
           <div class="form-group"><label for="femail">Email</label><input type="email" id="femail" name="email" placeholder="your@email.com" required></div>
