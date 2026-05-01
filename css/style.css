@@ -59,8 +59,6 @@ nav{position:relative;z-index:10;display:flex;justify-content:space-between;alig
 /* ABOUT */
 .about-new{display:grid;grid-template-columns:2fr 3fr;gap:80px;padding:72px 52px 88px;align-items:start;}
 .about-new-left{position:sticky;top:40px;}
-.about-tagline{font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:300;line-height:1.05;color:var(--brick);margin-bottom:44px;}
-.about-tagline em{font-style:italic;}
 .about-photo-wrap img{width:100%;display:block;filter:sepia(6%) saturate(90%);}
 .about-photo-credit{font-size:12px;font-style:italic;color:var(--dust);margin-top:10px;letter-spacing:0.03em;}
 .about-lead{font-size:19px;font-weight:600;color:var(--ink-soft);line-height:1.68;margin-bottom:20px;}
@@ -161,7 +159,6 @@ footer p{font-size:13px;color:var(--dust);letter-spacing:0.05em;}
 
   .about-new{padding:52px 24px 60px;grid-template-columns:1fr;gap:40px;}
   .about-new-left{position:static;}
-  .about-tagline{font-size:52px;margin-bottom:32px;}
   .about-lead{font-size:17px;}
   .about-body-p{font-size:17px;}
   .about-meta{grid-template-columns:1fr;}
